@@ -1,14 +1,15 @@
 import imgone from './img/one.jpg'
 import { AiFillMessage, AiOutlineLogout } from "react-icons/ai";
 import { IoSettings } from "react-icons/io5";
+import SocialMedia from "./socialMedia.jsx";
 function HeaderPage(props) {
     return (
         <>
       <div className="flex w-full flex-row flex-wrap">
 
-          <div className="h-0 w-0 overflow-y-hidden  shadow-lg md:h-screen md:w-1/4 lg:w-1/5 sm:w-full sm:h-full">{/* This is the main body */}
+          <div className="h-0 w-0 bg-indigo-500 overflow-y-hidden  shadow-lg md:h-screen md:w-1/4 lg:w-1/5 sm:w-full sm:h-full ">{/* This is the main body */}
               <div className="sticky top-0 bg-white p-5"> {/* container for picture */}
-                  <img src={imgone} className={"rounded-full border-indigo-100 shadow-lg"} alt=""/>
+                  <img src={imgone} className={"rounded-full border-indigo-400 shadow-lg"} alt=""/>
                   <div className="mt-5 w-full border-t pt-2 text-center text-2xl text-gray-600">Meer Afzal</div> {/* Name Title */}
                   <div className="flex h-screen w-full flex-col hover:cursor-pointer "> {/* for Message */}
                       <a href=""
@@ -29,7 +30,9 @@ function HeaderPage(props) {
                   </div>
               </div>
           </div>
+          <SocialMedia/>
       </div>
+
         </>
     );
 }
