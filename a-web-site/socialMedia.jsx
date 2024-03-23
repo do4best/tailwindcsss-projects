@@ -7,6 +7,20 @@ function SocialMedia(props) {
                 <div className="w-full rounded-lg bg-white p-5 shadow">
                     <textarea className={"w-full rounded-lg border bg-gray-200 p-2 shadow"} name="" id="" rows="5"
                               placeholder={"Speak your mind"}></textarea>
+
+                    <div className="mt-3 w-full grid grid-cols-2">
+                        <div className="col-start-1 col-end-1">
+                            <select name="" id="" className="float-left w-full rounded-lg border bg-gray-200 shadow">
+                                <option value="">Public</option>
+                                <option value="">Private</option>
+                            </select>
+                        </div>
+                        <div className="col-end-1 col-span-1">
+                            <button className="float-right rounded-lg bg-indigo-400 p-2 text-white hover:bg-indigo-300" type={"button"}>Submit</button>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div className="mt-3 flex flex-col">
                     <div className="mt-3 bg-white">
